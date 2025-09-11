@@ -1,11 +1,11 @@
-import React from 'react'
+import Index from "./component/auth/Index";
 
 const page = () => {
   return (
     <div>
-      <h1>Erneste!</h1>
+      <Index />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
