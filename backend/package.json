@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "dev": "nodemon --exec tsx ./src/app.ts",
-      "build": "tsc",
-      "start": "node dist/app.js"
+    "dev": "nodemon --exec tsx ./src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
   },
   "type": "module",
   "keywords": [],
@@ -20,6 +20,7 @@
     "mongoose": "^8.18.1"
   },
   "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
     "@types/express": "^5.0.3",
     "@types/node": "^24.3.1",
     "nodemon": "^3.1.10",

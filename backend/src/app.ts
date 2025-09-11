@@ -1,9 +1,11 @@
 import express from "express"
 import mongoose from "mongoose"
 import dotenv from "dotenv";
+import userRouter from "./router/user.router.js";
 
 const app = express()
 app.use(express.json());
+app.use("/users",userRouter)
 
 dotenv.config()
 
