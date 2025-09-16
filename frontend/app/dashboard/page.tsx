@@ -1,7 +1,10 @@
+import App from "../component/dashboardCopmont/App"
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <App />
+    </div>
   )
 }
 

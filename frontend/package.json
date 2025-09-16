@@ -11,10 +11,13 @@
   "dependencies": {
     "@ant-design/nextjs-registry": "^1.1.0",
     "antd": "^5.27.3",
+    "axios": "^1.12.2",
+    "lucide-react": "^0.544.0",
     "next": "15.5.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.9.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

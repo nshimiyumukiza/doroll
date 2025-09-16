@@ -4,6 +4,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { Button, Input, Space } from "antd";
 import { IoMdLogIn } from "react-icons/io";
 import { useState } from "react";
+import axios from "axios";
+import { useRouter } from "next/navigation";
+
 
 type loginProps = {
     onLogin : () => void
@@ -19,6 +22,7 @@ interface registerData{
 }
 
 const Register = ({onLogin}:loginProps) => {
+  const router = useRouter()
 
   const [formData, setFormData] = useState<registerData>({
     firstName :"",
@@ -39,6 +43,13 @@ const Register = ({onLogin}:loginProps) => {
 
   const handleSubmit = (e:any) =>{
     e.preventDefault()
+    axios.post("http://localhost:3000/users/register",formData);
+    setFormData({
+      firstName:"",lastName:"",email:"",phone:"",password:"",confrimPassword:""
+
+    })
+    router.push('/dashboard')
+    alert('register succefull!')
     console.log(formData)
   }
   return (
