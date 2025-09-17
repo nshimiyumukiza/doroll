@@ -179,18 +179,18 @@ const Register = ({onLogin}:loginProps) => {
               </Space>
             </div>
           </div>
-            <div className="flex justify-between items-center mt-6 text-gray-600">
-          <h1>
-            Register with{" "}
-            <span className="text-lg font-bold border-b">
-              terms and conditions
-            </span>
-          </h1>
-          <div className="flex px-3 py-2 bg-lime-300 rounded-lg space-x-3 items-center">
-            <button type="submit">Register</button>
-            <IoMdLogIn size={20} />
-          </div>
-        </div>
+        <div className="flex justify-between items-center mt-6 text-gray-600 col-span-1 md:col-span-2">
+    <h1>
+      Register with{" "}
+      <span className="text-lg font-bold border-b">
+        terms and conditions
+      </span>
+    </h1>
+    <div className="flex px-3 py-2 bg-lime-300 rounded-lg space-x-3 items-center">
+      <button type="submit">Register</button>
+      <IoMdLogIn size={20} />
+    </div>
+  </div>
         </form>
       </div>
 
